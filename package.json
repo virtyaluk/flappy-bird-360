@@ -1,0 +1,38 @@
+{
+  "name": "flappy-bird-360",
+  "version": "0.1.0",
+  "description": "Flappy Bird 360 - a small clone of Flappy Bird for web using PhaserJS.",
+  "main": "dist/flappy-bird-360.min.js",
+  "scripts": {
+    "dist": "./node_modules/.bin/webpack --progress --colors --config webpack.config.js",
+    "dist.min": "./node_modules/.bin/webpack --progress --colors --p --optimize-dedupe --config dist.config.js",
+    "dev-server": "./node_modules/.bin/webpack-dev-server --open --progress --colors --port 8080",
+    "build": "npm run dist && npm run dist.min",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Bohdan Shtepan",
+    "email": "virtydev@yandex.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtyaluk/flappy-bird-360.git"
+  },
+  "bugs": {
+    "url": "https://github.com/virtyaluk/react-compass/issues"
+  },
+  "keywords": [
+    "flappy bird",
+    "game",
+    "phaser"
+  ],
+  "homepage": "https://github.com/virtyaluk/flappy-bird-360",
+  "devDependencies": {
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1",
+    "eslint": "^1.10.3",
+    "eslint-loader": "^1.2.1",
+    "esprima": "^2.7.2"
+  }
+}
